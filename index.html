@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="صفحه معرفی و راه ارتباطی برای آشنایی و ازدواج موقت">
+  <title>همراه حلال | آشنایی و ازدواج موقت</title>
+  <style>
+    :root{--ink:#24233a;--muted:#77768a;--brand:#7b2f68;--brand2:#a34f85;--bg:#f7f4f8;--line:#eee5ef;--card:#fff;--soft:#fbf4fa}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Tahoma,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.9}
+    a{color:inherit;text-decoration:none}
+    .topbar{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10}
+    .nav{max-width:1120px;margin:auto;padding:12px 20px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+    .logo{font-size:22px;font-weight:800;color:var(--brand)}
+    .navlinks{display:flex;gap:18px;align-items:center;flex-wrap:wrap;font-size:14px}
+    .navlinks a:hover{color:var(--brand)}
+    .contact-pill{background:var(--brand);color:white;padding:8px 14px;border-radius:10px;font-weight:bold}
+    .hero{background:linear-gradient(135deg,#54204b,#8d3e78 60%,#bd7aa7);color:white;padding:48px 20px 42px}
+    .hero-inner{max-width:1120px;margin:auto;display:grid;grid-template-columns:1.4fr .8fr;gap:30px;align-items:center}
+    .hero h1{font-size:clamp(28px,4vw,42px);line-height:1.5;margin:0 0 12px}
+    .hero p{margin:0 0 22px;color:#f7eaf4;max-width:650px}
+    .hero-actions{display:flex;gap:10px;flex-wrap:wrap}
+    .btn{display:inline-flex;justify-content:center;align-items:center;gap:8px;padding:11px 16px;border-radius:10px;font-weight:bold;border:1px solid transparent;cursor:pointer;font-family:inherit}
+    .btn-light{background:#fff;color:var(--brand)}
+    .btn-outline{border-color:#e8cfe1;color:white;background:transparent}
+    .hero-box{background:#ffffff16;border:1px solid #ffffff38;border-radius:18px;padding:22px}
+    .hero-box strong{display:block;font-size:18px;margin-bottom:8px}
+    .hero-box span{font-size:14px;color:#f7eaf4}
+    main{max-width:1120px;margin:28px auto;padding:0 20px}
+    .section-head{display:flex;justify-content:space-between;align-items:end;gap:12px;flex-wrap:wrap;margin:30px 0 16px}
+    h2{font-size:23px;margin:0}
+    .sub{color:var(--muted);font-size:14px;margin:4px 0 0}
+    .city-list{display:flex;gap:9px;flex-wrap:wrap}
+    .city{background:#fff;border:1px solid var(--line);border-radius:999px;padding:7px 15px;font-size:14px}
+    .city:hover,.city.active{background:var(--soft);border-color:#d8b3cf;color:var(--brand)}
+    .notice{background:#fff8e8;border:1px solid #f0dfb2;padding:12px 15px;border-radius:12px;color:#705622;font-size:13px;margin:18px 0}
+    .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+    .profile{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 5px 18px #3b17300a;display:flex;flex-direction:column}
+    .profile-top{padding:18px 18px 12px;display:flex;gap:14px;align-items:center}
+    .avatar{width:68px;height:68px;border-radius:15px;background:linear-gradient(135deg,#f1d8e9,#d6b6d1);display:grid;place-items:center;font-size:27px;color:#743264;flex-shrink:0}
+    .profile h3{margin:0;font-size:18px}
+    .meta{color:var(--muted);font-size:13px}
+    .badge{display:inline-block;background:#f7eaf4;color:var(--brand);padding:2px 8px;border-radius:6px;font-size:12px;margin-top:4px}
+    .details{padding:0 18px 14px;display:grid;grid-template-columns:1fr 1fr;gap:8px}
+    .detail{background:#faf8fb;border-radius:8px;padding:8px 10px;font-size:13px}
+    .detail b{display:block;font-size:11px;color:var(--muted);font-weight:normal}
+    .bio{padding:0 18px 14px;color:#5f5b6a;font-size:13px;flex:1}
+    .profile-actions{padding:14px 18px 18px;border-top:1px solid #f3edf3;display:flex;gap:8px}
+    .profile-actions .btn{flex:1;font-size:13px;padding:9px 8px}
+    .btn-call{background:var(--brand);color:#fff}
+    .btn-eitaa{background:#e8f4fb;color:#176b9b}
+    .content-box{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px;margin:28px 0}
+    .content-box p{color:#666174;margin-bottom:0}
+    .faq{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:16px}
+    .faq article{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px}
+    .faq h3{font-size:16px;margin:0 0 6px}
+    .faq p{font-size:13px;color:var(--muted);margin:0}
+    footer{margin-top:40px;background:#292032;color:#f8eef6;padding:30px 20px}
+    .footer-inner{max-width:1120px;margin:auto;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+    footer p{color:#d8c9d7;font-size:13px;margin:5px 0}
+    .small-links{display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+    @media(max-width:850px){.hero-inner{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:580px){.grid{grid-template-columns:1fr}.faq{grid-template-columns:1fr}.nav{padding:10px 14px}.navlinks{gap:10px}.hero{padding:32px 16px}main{padding:0 14px}.hero-box{display:none}}
+  </style>
+</head>
+<body>
+<header class="topbar">
+  <nav class="nav">
+    <a class="logo" href="#">همراه حلال</a>
+    <div class="navlinks">
+      <a href="#home">خانه</a><a href="#profiles">معرفی‌ها</a><a href="#rules">راهنما</a><a href="#contact">تماس</a>
+      <a class="contact-pill" href="tel:09170065486">تماس مستقیم</a>
+    </div>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div class="hero-inner">
+    <div>
+      <h1>آشنایی محترمانه برای ازدواج موقت</h1>
+      <p>برای پرسش و هماهنگی، بدون ساخت حساب کاربری مستقیماً تماس بگیرید یا از طریق ایتا پیام بفرستید.</p>
+      <div class="hero-actions">
+        <a class="btn btn-light" href="tel:09170065486">☎ تماس: 09170065486</a>
+        <a class="btn btn-outline" href="https://eitaa.com/09170065486" target="_blank" rel="noopener">✉ پیام در ایتا</a>
+      </div>
+    </div>
+    <aside class="hero-box">
+      <strong>ارتباط مستقیم؛ بدون عضویت</strong>
+      <span>این وب‌سایت فرم ثبت‌نام یا ورود ندارد. برای ارتباط، از راه‌های تماس درج‌شده استفاده کنید.</span>
+    </aside>
+  </div>
+</section>
+
+<main>
+  <div class="section-head">
+    <div><h2>بر اساس شهر</h2><p class="sub">برای دیدن نمونه معرفی‌ها، شهر موردنظر را انتخاب کنید.</p></div>
+  </div>
+  <div class="city-list" id="cityFilters">
+    <button class="city active" data-city="همه">همه شهرها</button>
+    <button class="city" data-city="تهران">تهران</button>
+    <button class="city" data-city="قم">قم</button>
+    <button class="city" data-city="مشهد">مشهد</button>
+    <button class="city" data-city="سایر شهرها">سایر شهرها</button>
+  </div>
+
+  <div class="section-head" id="profiles">
+    <div><h2>نمونه معرفی‌ها</h2><p class="sub">این موارد نمایشی هستند؛ اطلاعات اشخاص واقعی در این قالب قرار داده نشده است.</p></div>
+  </div>
+  <div class="notice">توجه: قبل از انتشار، فقط اطلاعات و عکس‌هایی را اضافه کنید که با رضایت روشن صاحبان آن‌ها در اختیار شما قرار گرفته‌اند. این وب‌سایت وابستگی یا تأیید رسمی هیچ نهاد یا مرجعی را ادعا نمی‌کند.</div>
+
+  <section class="grid" id="profileGrid">
+    <article class="profile" data-city="تهران">
+      <div class="profile-top"><div class="avatar">♡</div><div><h3>معرفی نمونه ۱</h3><div class="meta">تهران · کد TH-01</div><span class="badge">اطلاعات نمایشی</span></div></div>
+      <div class="details"><div class="detail"><b>سن</b>پس از تأیید</div><div class="detail"><b>وضعیت</b>نیازمند هماهنگی</div></div>
+      <div class="bio">برای اطلاعات بیشتر و بررسی شرایط، لطفاً از راه ارتباطی سایت تماس بگیرید.</div>
+      <div class="profile-actions"><a class="btn btn-call" href="tel:09170065486">تماس</a><a class="btn btn-eitaa" href="https://eitaa.com/09170065486" target="_blank" rel="noopener">پیام در ایتا</a></div>
+    </article>
+    <article class="profile" data-city="قم">
+      <div class="profile-top"><div class="avatar">♡</div><div><h3>معرفی نمونه ۲</h3><div class="meta">قم · کد QO-02</div><span class="badge">اطلاعات نمایشی</span></div></div>
+      <div class="details"><div class="detail"><b>سن</b>پس از تأیید</div><div class="detail"><b>وضعیت</b>نیازمند هماهنگی</div></div>
+      <div class="bio">برای اطلاعات بیشتر و بررسی شرایط، لطفاً از راه ارتباطی سایت تماس بگیرید.</div>
+      <div class="profile-actions"><a class="btn btn-call" href="tel:09170065486">تماس</a><a class="btn btn-eitaa" href="https://eitaa.com/09170065486" target="_blank" rel="noopener">پیام در ایتا</a></div>
+    </article>
+    <article class="profile" data-city="مشهد">
+      <div class="profile-top"><div class="avatar">♡</div><div><h3>معرفی نمونه ۳</h3><div class="meta">مشهد · کد MA-03</div><span class="badge">اطلاعات نمایشی</span></div></div>
+      <div class="details"><div class="detail"><b>سن</b>پس از تأیید</div><div class="detail"><b>وضعیت</b>نیازمند هماهنگی</div></div>
+      <div class="bio">برای اطلاعات بیشتر و بررسی شرایط، لطفاً از راه ارتباطی سایت تماس بگیرید.</div>
+      <div class="profile-actions"><a class="btn btn-call" href="tel:09170065486">تماس</a><a class="btn btn-eitaa" href="https://eitaa.com/09170065486" target="_blank" rel="noopener">پیام در ایتا</a></div>
+    </article>
+    <article class="profile" data-city="سایر شهرها">
+      <div class="profile-top"><div class="avatar">♡</div><div><h3>معرفی نمونه ۴</h3><div class="meta">سایر شهرها · کد OT-04</div><span class="badge">اطلاعات نمایشی</span></div></div>
+      <div class="details"><div class="detail"><b>سن</b>پس از تأیید</div><div class="detail"><b>وضعیت</b>نیازمند هماهنگی</div></div>
+      <div class="bio">برای اطلاعات بیشتر و بررسی شرایط، لطفاً از راه ارتباطی سایت تماس بگیرید.</div>
+      <div class="profile-actions"><a class="btn btn-call" href="tel:09170065486">تماس</a><a class="btn btn-eitaa" href="https://eitaa.com/09170065486" target="_blank" rel="noopener">پیام در ایتا</a></div>
+    </article>
+    <article class="profile" data-city="تهران">
+      <div class="profile-top"><div class="avatar">♡</div><div><h3>معرفی نمونه ۵</h3><div class="meta">تهران · کد TH-05</div><span class="badge">اطلاعات نمایشی</span></div></div>
+      <div class="details"><div class="detail"><b>سن</b>پس از تأیید</div><div class="detail"><b>وضعیت</b>نیازمند هماهنگی</div></div>
+      <div class="bio">برای اطلاعات بیشتر و بررسی شرایط، لطفاً از راه ارتباطی سایت تماس بگیرید.</div>
+      <div class="profile-actions"><a class="btn btn-call" href="tel:09170065486">تماس</a><a class="btn btn-eitaa" href="https://eitaa.com/09170065486" target="_blank" rel="noopener">پیام در ایتا</a></div>
+    </article>
+    <article class="profile" data-city="قم">
+      <div class="profile-top"><div class="avatar">♡</div><div><h3>معرفی نمونه ۶</h3><div class="meta">قم · کد QO-06</div><span class="badge">اطلاعات نمایشی</span></div></div>
+      <div class="details"><div class="detail"><b>سن</b>پس از تأیید</div><div class="detail"><b>وضعیت</b>نیازمند هماهنگی</div></div>
+      <div class="bio">برای اطلاعات بیشتر و بررسی شرایط، لطفاً از راه ارتباطی سایت تماس بگیرید.</div>
+      <div class="profile-actions"><a class="btn btn-call" href="tel:09170065486">تماس</a><a class="btn btn-eitaa" href="https://eitaa.com/09170065486" target="_blank" rel="noopener">پیام در ایتا</a></div>
+    </article>
+  </section>
+
+  <section class="content-box" id="rules">
+    <h2>راهنمای استفاده</h2>
+    <p>این صفحه صرفاً یک قالب معرفی و ارتباط است. پیش از هرگونه توافق، سن قانونی، هویت و رضایت آزادانه طرفین را بررسی کنید و قوانین جاری و الزامات شرعی مربوط را از منبع معتبر جویا شوید. از ارسال اطلاعات حساس یا پرداخت وجه به افراد ناشناس خودداری کنید.</p>
+  </section>
+
+  <section class="content-box" id="contact">
+    <h2>ارتباط با ما</h2>
+    <p>برای پرسش و هماهنگی، با شماره زیر تماس بگیرید یا در ایتا پیام ارسال کنید.</p>
+    <div class="hero-actions" style="margin-top:14px">
+      <a class="btn btn-call" href="tel:09170065486">☎ 09170065486</a>
+      <a class="btn btn-eitaa" href="https://eitaa.com/09170065486" target="_blank" rel="noopener">✉ پیام در ایتا</a>
+    </div>
+  </section>
+
+  <div class="section-head"><div><h2>سوالات متداول</h2></div></div>
+  <section class="faq">
+    <article><h3>آیا عضویت لازم است؟</h3><p>خیر؛ این قالب فرم عضویت یا ورود ندارد و ارتباط از طریق تماس یا ایتا انجام می‌شود.</p></article>
+    <article><h3>چطور اطلاعات معرفی‌ها را تغییر دهم؟</h3><p>متن نمونه‌ها را در فایل index.html ویرایش کنید. تنها اطلاعاتی را منتشر کنید که اجازه انتشار آن‌ها را دارید.</p></article>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div><strong>همراه حلال</strong><p>قالب ساده معرفی و راه ارتباطی</p><p>© تمامی حقوق محفوظ است.</p></div>
+    <div class="small-links"><a href="#home">خانه</a><a href="#profiles">معرفی‌ها</a><a href="#rules">راهنما</a><a href="#contact">تماس</a></div>
+  </div>
+</footer>
+<script>
+  const buttons = document.querySelectorAll('.city');
+  const cards = document.querySelectorAll('.profile');
+  buttons.forEach(button => button.addEventListener('click', () => {
+    buttons.forEach(b => b.classList.remove('active'));
+    button.classList.add('active');
+    const city = button.dataset.city;
+    cards.forEach(card => card.style.display = (city === 'همه' || card.dataset.city === city) ? 'flex' : 'none');
+  }));
+</script>
+</body>
+</html>
